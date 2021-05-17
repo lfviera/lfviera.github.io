@@ -69,7 +69,6 @@ function showVieirice(){
   let prefix = "<b>Preço por m&sup2;:</b>";
   let vieirices = [
                     "Oiça, espete lá uma placa com valores do T1, T2 e T3 e tem o dinheiro de volta.",
-                    "Compre. Vale a pena.",
                     "Não é pior negócio do que o meu com a Imosteps.",
                     "Para isso mais vale comprares os meus terrenos em Moçambique.",
                     "Bons terrenos para um cemitério. Ou um condomínio de luxo.",
@@ -83,7 +82,7 @@ function showVieirice(){
                     "Devia ser enforcado uma pessoa que pesquisou um concelho destes",
                     "Está barato. E no dia em que você comprar aqui casa, o valor dela triplica ou quadrlipulica logo.",
                     "Não sei mas o senhor faça o seguinte: Ponha-me a sua dúvida por escrito e um dia destes eu digo-lhe.",
-                    "Eu nem quero ouvir falar desse concelho. Nem me fale disso. Até me provoca calafrios. Até fico logo com cócegas."
+                    "Eu nem quero ouvir falar desse concelho. Até me provoca calafrios. Nem me fale disso. Até fico logo com cócegas."
                  ];
   if (suggestions.findIndex(item => lastSearched.toLowerCase() === item.toLowerCase()) != -1){
     document.getElementById("pvieirice").innerHTML = prefix + "<br><br>" + vieirices[getNumber(vieirices.length)];
