@@ -80,9 +80,10 @@ function showVieirice(){
                     "É caro. Mas não precisa de pagar. Vá reestruturando a dívida.",
                     "Você se comprar casa aqui vai estar 10 anos à frente do seu vizinho.",
                     "Devia ser enforcado uma pessoa que pesquisou um concelho destes",
-                    "Está barato. E no dia em que você comprar aqui casa, o valor dela triplica ou quadrlipulica logo.",
+                    "Nesta zona o valor não só vai triplicar como <i>quat...quap...quadrlipulicar</i>.",
                     "Não sei mas o senhor faça o seguinte: Ponha-me a sua dúvida por escrito e um dia destes eu digo-lhe.",
-                    "Eu nem quero ouvir falar desse concelho. Até me provoca calafrios. Nem me fale disso. Até fico logo com cócegas."
+                    "Eu nem quero ouvir falar desse concelho. Até me provoca calafrios. Nem me fale disso. Até fico logo com cócegas.",
+                    "Pois, não sei. Neste concelho nunca <i>sube</i>."
                  ];
   searchWrapper.classList.remove("active");
   if (lastSearched != document.getElementById('searchbox').value.toLowerCase()){
