@@ -36,12 +36,12 @@ inputBox.onkeyup = (e)=>{
 function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
-    icon.onclick = ()=>{
-        if (lastSearched != selectData){
-          lastSearched = selectData;
-          showVieirice();
-        }
-    }
+    //icon.onclick = ()=>{
+    //    if (lastSearched != selectData){
+    //      lastSearched = selectData;
+    //      showVieirice();
+    //    }
+    //}
     searchWrapper.classList.remove("active");
 }
 
@@ -84,9 +84,13 @@ function showVieirice(){
                     "Não sei mas o senhor faça o seguinte: Ponha-me a sua dúvida por escrito e um dia destes eu digo-lhe.",
                     "Eu nem quero ouvir falar desse concelho. Até me provoca calafrios. Nem me fale disso. Até fico logo com cócegas."
                  ];
-  if (suggestions.findIndex(item => lastSearched.toLowerCase() === item.toLowerCase()) != -1){
-    document.getElementById("pvieirice").innerHTML = prefix + "<br><br>" + vieirices[getNumber(vieirices.length)];
-  } else {
-    document.getElementById("pvieirice").innerHTML = prefix + "<br><br>Pesquise lá um concelho como deve ser se não aperto-lhe o pescoço...";
+  searchWrapper.classList.remove("active");
+  if (lastSearched != document.getElementById('searchbox').value.toLowerCase()){
+    lastSearched = document.getElementById('searchbox').value.toLowerCase();
+    if (suggestions.findIndex(item => lastSearched === item.toLowerCase()) != -1){
+      document.getElementById("pvieirice").innerHTML = prefix + "<br><br>" + vieirices[getNumber(vieirices.length)];
+    } else {
+      document.getElementById("pvieirice").innerHTML = prefix + "<br><br>Pesquise lá um concelho como deve ser se não aperto-lhe o pescoço...";
+    }
   }
 }
